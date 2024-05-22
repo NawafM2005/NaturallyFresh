@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="menustyle.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturally Fresh | Menu</title>
+    <link rel="shortcut icon"
+        href="Images/top_logo.png"
+        type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav_bar">
+            <div class="logo">
+                <a href="/index.html"><img src="Images/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/menu.html">Menu</a></li>
+                    <li><a href="/aboutus.html">About</a></li>
+                    <li><a href="/contactus.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h3>Menu</h3>
+    </header>
+
+    <div class="our_menu">
+        <div class="our_menu_list">
+            <ul class="list_of_buttons">
+                <li><button id="featured" class="menu-item" onclick="display_items(this)">Featured</button></li>
+                <li><button id="smoothies" class="menu-item" onclick="display_items(this)">Smoothies</button></li>
+                <li><button id="juices" class="menu-item" onclick="display_items(this)">Juices</button></li>
+                <li><button id="shots" class="menu-item" onclick="display_items(this)">Shots</button></li>
+                <li><button id="wraps" class="menu-item" onclick="display_items(this)">Wraps</button></li>
+                <li><button id="salads" class="menu-item" onclick="display_items(this)">Salads</button></li>
+                <li><button id="toasts" class="menu-item" onclick="display_items(this)">Toasts</button></li>
+                <li><button id="drinks" class="menu-item" onclick="display_items(this)">Drinks</button></li>
+                <li><button id="supplements" class="menu-item" onclick="display_items(this)">Supplements</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="order">
+        <h3>Order with:</h3>
+        <a href="https://www.doordash.com/store/naturally-fresh-juice-bar-mississauga-26303893/?utm_campaign=gpa" target="_blank">
+            <button class="doordash_button"></button></a>
+        <a href="https://www.ubereats.com/ca/store/naturally-fresh-juice-bar/6-Xq6bFQXiary0u5putt8A?utm_campaign=place-action-link&utm_medium=organic&utm_source=google" target="_blank">
+            <button class="ubereats_button"></button></a>
+    </div>
+
+    <div class="all_divs">
+
+        <div class="featured" style="display: none;">
+            <div class="items_header_text">
+                <h3>Featured</h3>
+                <h4>Todays Featured Item!</h4>
+            </div>
+
+            <div class="featured_item">
+                <div class="item_img">
+                    <img src="Images/Logo.png" alt="Logo">
+                </div>
+                <div>
+                    <p style="font-size: 24px;">Mango Crush</p>
+                    <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Mango, coconut, almond milk, and protein</p>
+                    <button id="item_price">$9.99</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="smoothies" style="display: none;">
+            <div class="items_header_text">
+                <h3>Smoothies</h3>
+                <h4>Creamy and packed with protein, our shakes are the perfect post-workout pick-me-up or a satisfying anytime snack. Choose from a variety of flavors to curb your cravings and support your active lifestyle.</h4>
+            </div>
+
+            <div class="items_list">
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Fruit Punch Smoothie</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Strawberry, raspberry, banana, yogurt, almond milk, and protein</p>
+                        <button id="item_price">$9.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Sweet N Creamy</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Kale, avocado, banana, dates, almond milk, and protein</p>
+                        <button id="item_price">$9.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Berry-Berry Smoothie</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Mixed berries, green yogurt, honey, almond milk, and protein</p>
+                        <button id="item_price">$9.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Naturally Green Smoothie</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Spinach, banana, honey, yogurt, almond milk, and protein</p>
+                        <button id="item_price">$8.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Green Smoothie</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Spinach, mango, pineapple, mint, almond milk, and protein</p>
+                        <button id="item_price">$9.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Peanut Butter Cluster Smoothie</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Banana, dates, peanut butter, chocolate chips, protein, cocoa powder, and almond milk</p>
+                        <button id="item_price">$10.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Mango Crush</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Mango, coconut, almond milk, and protein</p>
+                        <button id="item_price">$9.99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="juices" style="display: none;">
+            <div class="items_header_text">
+                <h3>Juices</h3>
+                <h4>Nutrient-rich juices made with fresh fruits and vegetables.</h4>
+            </div>
+
+            <div class="items_list">
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Manifestation Juice</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Pineapple, watermelon, ginger, lemon, beets, and carrots</p>
+                        <button id="item_price">$8.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Blu Majik Juice</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Pineapple, green apple, lemon, and blue spirulina</p>
+                        <button id="item_price">$4.00</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Sunshine</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Pineapple, orange, carrot, and ginger</p>
+                        <button id="item_price">$8.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Vibration</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Pineapple, cucumber, green apple, mint</p>
+                        <button id="item_price">$8.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Zen</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Pineapple, orange, tumeric, and ginger</p>
+                        <button id="item_price">$8.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Karmic</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Kale, cucumber, ginger, lemon, green apple, and celery</p>
+                        <button id="item_price">$8.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Resilience</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Pineapple, green apple, strawberry, orange, and pomegranate</p>
+                        <button id="item_price">$17.98</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shots" style="display: none;">
+            <div class="items_header_text">
+                <h3>Shots</h3>
+                <h4>A punch of antioxidants to keep you feeling your best.</h4>
+            </div>
+
+            <div class="items_list">
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Ginger Lemon Shot</p>
+                        <button id="item_price">$4.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Tumeric Shot</p>
+                        <button id="item_price">$4.99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wraps" style="display: none;">
+            <div class="items_header_text">
+                <h3>Wraps</h3>
+                <h4>Flavorful combinations with fresh ingredients, perfectly wrapped for your convenience.</h4>
+            </div>
+
+            <div class="items_list">
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Greek Vacation</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Lettuce, feta cheese, olives, onion, tomatoes, and greek dressing</p>
+                        <button id="item_price">$10.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Green Wrap</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Lettuce, cherry tomatoes, onions, black pepper, roasted, red pepper, olives, and cucumber</p>
+                        <button id="item_price">$9.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Caesar Wrap</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Lettuce, caesar dressing, and parmesan cheese</p>
+                        <button id="item_price">$8.99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="salads" style="display: none;">
+            <div class="items_header_text">
+                <h3>Salads</h3>
+                <h4>Fresh, flavorful, and bursting with goodness, our salads are anything but boring.  Choose from a variety of chef-crafted options to power your day, all made with wholesome ingredients.</h4>
+            </div>
+
+            <div class="items_list">
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Mango Me Away Salad</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Baby spinach, mango, apples, kiwi, and pomegranate</p>
+                        <button id="item_price">$10.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Mother Nature Salad</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Kale, cherry tomatoes, beets, red onions, avocado, baby carrots, and lemon</p>
+                        <button id="item_price">$9.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">All Day Breakfast</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Greek yogurt, bananas, dates, almond butter, chocolate chips, and cocoa nibs</p>
+                        <button id="item_price">$10.99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toasts" style="display: none;">
+            <div class="items_header_text">
+                <h3>Toasts</h3>
+                <h4>Deliciously crisp and piled high with toppings, our toasts are the perfect breakfast, lunch, or anytime treat.</h4>
+            </div>
+
+            <div class="items_list">
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Power Toast</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Avocado, cherry tomatoes, mint, chili flakes, and salt</p>
+                        <button id="item_price">$9.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Classic Peanut Butter Toast</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Ingredients: Peanut butter, and sliced green apple</p>
+                        <button id="item_price">$7.99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="drinks" style="display: none;">
+            <div class="items_header_text">
+                <h3>Drinks</h3>
+                <h4>Hydrating and refreshing, our drinks quench your thirst and come in a variety of flavors to satisfy every craving.</h4>
+            </div>
+
+            <div class="items_list">
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Water</p>
+                        <button id="item_price">$1.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Flow Alkaline Water</p>
+                        <button id="item_price">$3.49</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Fairline Protein Shake</p>
+                        <button id="item_price">$6.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Buddha Coconut Water</p>
+                        <button id="item_price">$5.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Bio Steel (Electrolyte Water)</p>
+                        <button id="item_price">$5.99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="supplements" style="display: none;">
+            <div class="items_header_text">
+                <h3>Supplements</h3>
+                <h4>Support your well-being from the inside out. Explore our range of high-quality supplements designed to bridge nutrient gaps and optimize your health.</h4>
+            </div>
+
+            <div class="items_list">
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Beauty Green Collagen</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Info: Green collagen booster contains Hyaluronic acid and biotin<br><br>Net weight - 300g</p>
+                        <button id="item_price">$64.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Oatdacious (Plant Base) Protein Powder</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Info: Oat milk powder, plant protein, and oat fibre<br><br>Net weight - 448g</p>
+                        <button id="item_price">$39.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Plant Based Sunwarrior Protein</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Info: Soy free, gluten-free, and dairy free<br><br>Net weight - 750g</p>
+                        <button id="item_price">$63.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Protein Collagen</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Net weight - 500g</p>
+                        <button id="item_price">$64.99</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="Images/Logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <p style="font-size: 24px;">Monk Free Sugar</p>
+                        <p style="padding-left: 5px; padding-right: 5px;">Info: Sweetener erythritol monk fruit blend<br><br>Net weight - 454g</p>
+                        <button id="item_price">$19.99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2024 Naturally Fresh. All Rights Reserved.</p>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/menu.html">Menu</a>
+            <a href="/aboutus.html">About</a>
+            <a href="/contactus.html">Contact</a>
+        </nav>
+    </footer>
+</body>
+</html>
+
+<script>
+    const buttons = document.querySelectorAll(".menu-item");
+    const defaultClickedButtonId = "featured"; // Change this to the ID of the button you want initially clicked
+
+    buttons.forEach(button => {
+    button.addEventListener("click", function() {
+        // Remove clicked class from all buttons
+        buttons.forEach(btn => btn.classList.remove("clicked"));
+
+        // Add clicked class to the current button
+        this.classList.add("clicked");
+    });
+    });
+
+    // Simulate click on the default button on page load
+    document.getElementById(defaultClickedButtonId).click();
+
+    function display_items(button) {
+        // Get the ul element
+        const ulElement = document.querySelector('.list_of_buttons');
+
+        // Get all li elements within the ul
+        const listItems = ulElement.querySelectorAll('li');
+
+        // Loop through each list item
+        listItems.forEach(item => {
+            // Get the button inside the list item
+            const itemButton = item.querySelector('button');
+
+            // Check if the button's ID matches the clicked button's ID
+            if (itemButton.id === button.id) {
+                const divToShow = document.querySelector(`.${button.id}`);
+                if (divToShow) {
+                    divToShow.style.display = "block"; // Show the matching div
+                }
+            } else {
+                const divToHide = document.querySelector(`.${itemButton.id}`);
+                if (divToHide) {
+                    divToHide.style.display = "none"; // Hide non-matching divs
+                }
+            }
+        });
+    }
+    
+</script>

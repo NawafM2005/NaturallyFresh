@@ -1,0 +1,388 @@
+header {
+    padding: 10px 0;
+    padding-bottom: 100px;
+    position: relative;  /* Required for pseudo-element positioning */
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/Images/menu_background.png');
+    background-size: cover;  /* Adjust as needed */
+    z-index: -1;  /* Ensures the pseudo-element is behind the content */
+}
+
+header h3{
+    padding-top: 50px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    height: 100px;
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.nav_links ul {
+    list-style: none;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav_links ul li {
+    margin-left: 50px;
+    border-right: 3px solid white;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.nav_links ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+.nav_links ul li a:hover {
+    color: white;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(243, 254, 243);
+}
+
+.our_menu{
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.our_menu h3{
+    font-size: 30px;
+}
+
+.our_menu_list{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.our_menu_list ul {
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+}
+
+.our_menu_list ul li {
+    padding-right: 40px;
+}
+
+.menu-item{
+    background-color: #ffffff; /* Blue color */
+    color: rgb(0, 0, 0);
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    font-size: 16px;
+    cursor: pointer; /* Let user know it's clickable */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s ease; /* Smooth transition on hover */
+}
+  
+.menu-item:hover {
+    background-color: #ff8a8a; /* Darker blue on hover */
+    color: black;
+}
+
+.menu-item.clicked {
+    background-color: #ff5656; /* Example color change on click */
+    color: white;
+}
+
+.menu-item.clicked:hover {
+    color: white;
+}
+
+.featured{
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.smoothies{
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.juices{
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.shots{
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.wraps{
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.salads{
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.toasts{
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.drinks{
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.supplements{
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    color: white;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+#item_price{
+    background-color: #ff5a5a; /* Blue color */
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    font-size: 16px;
+    cursor: pointer; /* Let user know it's clickable */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0px 5px 8px rgb(0, 0, 0); /* Add a slight shadow */
+}
+
+.items_header_text{
+    padding-top: 20px;
+}
+
+.items_header_text h3{
+    font-size: 30px;
+}
+
+.item{
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px rgb(255, 95, 95); /* Add a slight shadow */
+}
+
+.featured_item{
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 20px;
+    margin-right: 400px;
+    margin-left: 400px;
+    box-shadow: 5px 5px 10px rgb(221, 255, 0); /* Add a slight shadow */
+}
+
+.item p{
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
+.item_img {
+    /* Set a square size for the image container */
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflowing parts of the image */
+    border-radius: 50%; /* Make the container circular */
+    display: flex; /* Activate flexbox */
+    margin: 0 auto;
+}
+  
+.item_img img {
+    /* Ensure the image fills the entire container */
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Crop image to fit, maintaining aspect ratio */
+}
+
+.items_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px; /* Adjust spacing between items as needed */
+    margin-bottom: 80px;
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.order{
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.order button:hover{
+    scale: 1.05;
+    transition: 0.5s ease-in-out;
+}
+
+.doordash_button {
+    background-image: url('Images/doordash.png');  /* Replace with your image path */
+    background-size: contain;  /* Adjust as needed */
+    background-repeat: no-repeat;  /* Prevent image tiling */
+    background-position: center;  /* Center the image within the button */
+    width: 200px;  /* Adjust width as needed */
+    height: 30px;  /* Adjust height as needed */
+    border: none;  /* Remove default button border */
+    cursor: pointer;  /* Indicate clickable behavior */
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 15px;  /* Add padding around all sides (adjust as needed) */
+    background-color: rgb(226, 251, 226);
+    box-shadow: 0px 5px 8px rgb(0, 0, 0); /* Add a slight shadow */
+}
+
+.ubereats_button {
+    background-image: url('Images/ubereats.png');  /* Replace with your image path */
+    background-size: contain;  /* Adjust as needed */
+    background-repeat: no-repeat;  /* Prevent image tiling */
+    background-position: center;  /* Center the image within the button */
+    width: 200px;  /* Adjust width as needed */
+    height: 30px;  /* Adjust height as needed */
+    border: none;  /* Remove default button border */
+    cursor: pointer;  /* Indicate clickable behavior */
+    border-radius: 10px;
+    padding: 15px;  /* Add padding around all sides (adjust as needed) */
+    background-color: rgb(226, 251, 226);
+    box-shadow: 0px 5px 8px rgb(0, 0, 0); /* Add a slight shadow */
+}
+
+.all_divs p{
+    color: black;
+}
+
+.all_divs h4{
+    color: rgb(255, 255, 255);
+    padding-left: 300px;
+    padding-right: 300px;
+    font-weight: lighter;
+}
+
+
+/* Basic styling for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+/* Style links in the footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}

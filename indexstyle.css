@@ -504,18 +504,10 @@ html{
     .slider-wrapper {
         max-width: 15rem;
     }
-
-    .slider img {
-        object-fit: contain;
-    }
 }
 
 @media (max-width: 300px) {
     .slider-wrapper {
-        max-width: 12rem;
-    }
-
-    .slider img {
-        object-fit: contain;
+        max-width: 20rem;
     }
 }

@@ -409,6 +409,18 @@ html{
     .menu_header{
         font-size: 26px;
     }
+
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        height: 100px;
+        backdrop-filter: blur(50px);
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -429,6 +441,18 @@ html{
     
     .container_instagram {
         display: block;
+    }
+
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        height: 100px;
+        backdrop-filter: blur(50px);
+        border-radius: 10px;
     }
 }
 
@@ -504,10 +528,30 @@ html{
     .slider-wrapper {
         max-width: 15rem;
     }
+
+    .slider img {
+        object-fit: contain;
+    }
+
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        height: 100px;
+        backdrop-filter: blur(50px);
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 300px) {
     .slider-wrapper {
         max-width: 12rem;
+    }
+
+    .slider img {
+        object-fit: contain;
     }
 }

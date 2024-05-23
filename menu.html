@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/577783cd50.js" crossorigin="anonymous"></script>
     <title>Naturally Fresh | Menu</title>
     <link rel="shortcut icon"
         href="Images/top_logo.png"
@@ -19,6 +20,22 @@
                 <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
             </div>
             <div class="nav_links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class="fa-solid fa-bars" id="menu_icon"></i>
+            </label>
+        </nav>
+
+        <nav class="nav_bar_dropdown">
+            <div class="nav_links_dropdown">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -547,6 +564,17 @@
                 }
             }
         });
+    }
+
+    const menuIcon = document.getElementById("menu_icon");
+
+    menuIcon.addEventListener("click", toggleDropdown);
+
+    function toggleDropdown() {
+        const dropdown = document.querySelector(".nav_bar_dropdown");
+        const isDropdownVisible = dropdown.style.display === "block";
+
+        dropdown.style.display = isDropdownVisible ? "none" : "block";
     }
     
 </script>

@@ -326,7 +326,7 @@ body{
     text-align: center;
     max-width: 1300px;
     padding: 10px;
-    background-color: #000000;
+    backdrop-filter: blur(50px);
 }
 
 .nav_links_dropdown ul {
@@ -404,7 +404,6 @@ html{
         "wraps_text toasts_text"
         "salads_text supplements_text";
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(100px, auto);
     }
 
     .menu_header{

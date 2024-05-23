@@ -111,9 +111,8 @@ body{
     max-width: 1300px;
     margin: 0 auto;
     padding: 10px 20px;
-    height: 300px;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     background-color: rgb(224, 255, 223);
     border-radius: 10px;
     margin-bottom: 50px;
@@ -150,7 +149,7 @@ main{
     color: black;
     font-family: "Times New Roman", sans-serif;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 34px;
     letter-spacing: 3px;
     text-align: center;
     border-radius: 10px; /* Add some rounding to the corners */
@@ -214,8 +213,14 @@ main{
 }
 
 .layer:hover h3{
-    color: rgb(172, 240, 127);
+    color: rgb(255, 255, 255);
     transition: 0.3s;
+}
+
+.front_img{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(0, 0, 0); /* Add a slight shadow */
 }
 
 

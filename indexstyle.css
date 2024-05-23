@@ -45,7 +45,6 @@ header::after {
 
 .nav_links ul li {
     margin-left: 50px;
-    border-right: 3px solid white;
     padding-right: 40px;
     box-sizing: border-box;
 }
@@ -140,7 +139,7 @@ body{
 .slider img {
 	flex: 1 0 100%;
 	scroll-snap-align: start;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 .slider-nav {
@@ -184,6 +183,7 @@ body{
     margin-bottom: 100px;
     border-radius: 20px;
     box-shadow: 0px 5px 8px rgb(255, 76, 76); /* Add a slight shadow */
+    padding-bottom: 50px;
 }
 
 .our_menu{
@@ -228,37 +228,37 @@ body{
 
 .shakes_text {
     grid-area: shakes_text;
-    background: url('Images/monkey.jpeg');
+    background: url('Images/protein_background.jpeg');
     background-size: cover;  /* Adjust as needed */
 }
 
 .juices_text {
     grid-area: juices_text;
-    background: url('Images/monkey.jpeg');
+    background: url('Images/juices_background.JPG');
     background-size: cover;  /* Adjust as needed */
 }
 
 .wraps_text {
     grid-area: wraps_text;
-    background: url('Images/monkey.jpeg');
+    background: url('Images/wraps_background.png');
     background-size: cover;  /* Adjust as needed */
 }
 
 .salads_text {
     grid-area: salads_text;
-    background: url('Images/monkey.jpeg');
+    background: url('Images/salads_background.jpeg');
     background-size: cover;  /* Adjust as needed */
 }
 
 .toasts_text {
     grid-area: toasts_text;
-    background: url('Images/monkey.jpeg');
+    background: url('Images/peanutbuttertoast.png');
     background-size: cover;  /* Adjust as needed */
 }
 
 .supplements_text {
     grid-area: supplements_text;
-    background: url('Images/monkey.jpeg');
+    background: url('Images/supplements_background.png');
     background-size: cover;  /* Adjust as needed */
 }
 
@@ -296,7 +296,7 @@ body{
 	scrollbar-width: none; /* Hide scrollbar Firefox */
     background-color: rgb(255, 255, 255);
     gap: 20px;
-    box-shadow: 0px 5px 8px rgb(255, 255, 255); /* Add a slight shadow */
+    box-shadow: 0px 5px 8px rgb(246, 255, 0); /* Add a slight shadow */
     margin-bottom: 50px;
 }
 
@@ -308,7 +308,14 @@ body{
     max-height: 800px;
 }
 
-
+.icons{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
 
 /* Basic styling for the footer */
 footer {
@@ -328,3 +335,23 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+@media screen and (max-width: 900px) {
+
+    .nav_links {
+      display: none;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; /* Make it clickable */
+    }
+      
+    #menu_icon {
+        font-size: 2rem; /* adjust font size as needed */
+        color: white; /* adjust color as needed */
+    }
+  }

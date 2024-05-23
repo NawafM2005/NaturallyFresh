@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naturally Fresh | About</title>
+    <script src="https://kit.fontawesome.com/577783cd50.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon"
         href="Images/top_logo.png"
         type="image/x-icon">
@@ -26,6 +27,22 @@
                     <li><a href="contactus.html">Contact</a></li>
                 </ul>
             </div>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class="fa-solid fa-bars" id="menu_icon"></i>
+            </label>
+        </nav>
+
+        <nav class="nav_bar_dropdown">
+            <div class="nav_links_dropdown">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
         <h3>About Us</h3>
@@ -34,7 +51,7 @@
     <div class="aboutus">
         <div id="our_info">
             <div id="intro">
-                <h3 style="font-size: 40px;">Who Are We?</h3>
+                <h3>Who Are We?</h3>
                 <p>Welcome to Naturally Fresh Juice Bar, where health and flavor meet! Nestled inside the heart of Free Bird Gym, our family-owned juice bar is dedicated to serving up the freshest, most nutritious juices, protein shakes, and health-boosting beverages to support your active lifestyle.
             </div>
 
@@ -42,7 +59,7 @@
 
             <div class="our_section">
                 <div id="text">
-                    <b style="font-size: 32px;">Our Story</b>
+                    <b>Our Story</b>
                     <p>
                         Naturally Fresh Juice Bar is more than just a place to grab a drink—it's a labor of love from our family to yours. As fitness enthusiasts and health advocates, we understand the importance of nourishing the body with wholesome ingredients. This passion led us to create a space where gym-goers and health-conscious individuals can refuel with the finest natural beverages.
                     </p>
@@ -59,7 +76,7 @@
                     <img src="Images/coolbackground.jpeg" style="object-fit: cover; max-width: 200px;">
                 </div>
                 <div id="text">
-                    <b style="font-size: 32px;">Our Mission</b>
+                    <b>Our Mission</b>
                     <p>
                         Our mission is simple: to provide our community with delicious, nutrient-rich drinks that support a healthy and active lifestyle. We believe that what you put into your body matters, which is why we use only the freshest fruits, vegetables, and high-quality proteins in all our offerings. From revitalizing juices packed with vitamins and minerals to protein shakes that help you recover and build muscle, every item on our menu is crafted with your wellness in mind.
                     </p>
@@ -68,7 +85,7 @@
 
             <hr class="line_design">
             
-            <div class="our_section" style="height: 300px;">
+            <div class="our_section">
                 <div id="text">
                     <b style="font-size: 32px;">What We Offer</b>
                     <p><b style="color: rgb(255, 93, 120); font-size: 18px;">Fresh Juices:</b> Bursting with flavor and nutrients, our juices are made to order from the finest fresh produce.</p>
@@ -77,7 +94,7 @@
                     <p><b style="color: rgb(255, 93, 120); font-size: 18px;">Toasts, Salads & Wraps:</b>  Build your perfect meal with our selection of whole-wheat breads, fresh salads, and wraps. Choose lean protein, healthy fats, and a variety of colorful vegetables for a delicious and nutritious combination.</p>
                 </div>
                 <div id="image">
-                    <img src="Images/whole_entire_menu.jpeg" style="height: 400px;">
+                    <img src="Images/whole_entire_menu.jpeg">
                 </div>
             </div>
 
@@ -88,7 +105,7 @@
                     <img src="Images/bunch_of_juices.JPG">
                 </div>
                 <div id="text">
-                    <b style="font-size: 32px;">Why Choose Us?</b>
+                    <b>Why Choose Us?</b>
                     <p>
                         At Naturally Fresh Juice Bar, we take pride in our commitment to quality and customer satisfaction. Our family personally selects and prepares each ingredient to ensure you get the best every time. Plus, being located inside Free Bird Gym means you can conveniently grab a healthy drink before or after your workout, making it easier than ever to stick to your health goals.
                     </p>
@@ -99,7 +116,7 @@
 
             <div class="our_section">
                 <div id="text">
-                    <b style="font-size: 32px;">Join Our Family!</b>
+                    <b>Join Our Family!</b>
                     <p>
                         We invite you to become part of the Naturally Fresh Juice Bar family. Stop by for a refreshing drink, chat with us about your health goals, and experience the difference that passion and quality make. Together, we can create a healthier, happier community, one delicious sip at a time.
                     </p>
@@ -131,3 +148,15 @@
     </footer>
 </body>
 </html>
+
+<script>
+    const menuIcon = document.getElementById("menu_icon");
+    menuIcon.addEventListener("click", toggleDropdown);
+
+    function toggleDropdown() {
+        const dropdown = document.querySelector(".nav_bar_dropdown");
+        const isDropdownVisible = dropdown.style.display === "block";
+
+        dropdown.style.display = isDropdownVisible ? "none" : "block";
+    }
+</script>

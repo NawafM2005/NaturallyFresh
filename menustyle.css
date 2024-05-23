@@ -286,7 +286,7 @@ body{
     text-align: center;
     max-width: 1300px;
     padding: 10px;
-    backdrop-filter: blur(50px);
+    background-color: black;
 }
 
 .nav_links_dropdown ul {

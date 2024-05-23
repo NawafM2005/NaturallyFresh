@@ -27,10 +27,20 @@
                 </ul>
             </div>
 
-            <input type="checkbox" id="check" style="display: none;">
+            <input type="checkbox" id="check">
             <label for="check" class="icons">
                 <i class="fa-solid fa-bars" id="menu_icon"></i>
             </label>
+        </nav>
+        <nav class="nav_bar_dropdown">
+            <div class="nav_links_dropdown">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div class="intro_div">
@@ -143,5 +153,15 @@
     }
 
     setInterval(scrollToNextImage, 4000); // Call scrollToNextImage every 8 seconds
-    
+
+    const menuIcon = document.getElementById("menu_icon");
+
+    menuIcon.addEventListener("click", toggleDropdown);
+
+    function toggleDropdown() {
+        const dropdown = document.querySelector(".nav_bar_dropdown");
+        const isDropdownVisible = dropdown.style.display === "block";
+
+        dropdown.style.display = isDropdownVisible ? "none" : "block";
+    }
 </script>

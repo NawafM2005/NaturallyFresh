@@ -106,7 +106,7 @@ body{
 }
 
 .location_info{
-    display: flex;
+    display: block;
     text-align: center;
     max-width: 1300px;
     margin: 0 auto;
@@ -143,7 +143,6 @@ body{
     margin-bottom: 40px;
 }
 
-
 main{
     background-color: rgb(224, 255, 223);
     color: black;
@@ -162,7 +161,7 @@ main{
 .work_list {
     background-color: transparent;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-columns: repeat(2, 300px);
     grid-auto-rows: 300px;
     grid-column-gap: 50px; /* Horizontal gap */
     grid-row-gap: 80px; /* Vertical gap */   
@@ -217,10 +216,52 @@ main{
     transition: 0.3s;
 }
 
-.front_img{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0px 5px 8px rgb(0, 0, 0); /* Add a slight shadow */
+.icons{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+
+.nav_bar_dropdown{
+    display: none;
+    text-align: center;
+    max-width: 1300px;
+    padding: 10px;
+    background-color: black;
+}
+
+.nav_links_dropdown ul {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav_links_dropdown ul li {
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.nav_links_dropdown ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+.nav_links_dropdown ul li a:hover {
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#check{
+    display: none;
 }
 
 
@@ -239,6 +280,86 @@ footer a {
     text-decoration: none;
     margin: 0 10px;
 }
+
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+
+    .nav_links {
+      display: none;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; /* Make it clickable */
+    }
+      
+    #menu_icon {
+        font-size: 2rem; /* adjust font size as needed */
+        color: white; /* adjust color as needed */
+    }
+
+    .contact_info{
+        display: block;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .location_info{
+        display: block;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    main{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .location_info .location_map{
+        width: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .work_list {
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-auto-rows: 200px;
+        grid-column-gap: 50px; /* Horizontal gap */
+        grid-row-gap: 20px; /* Vertical gap */   
+        margin-bottom: 80px;
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    #contact_text{
+        font-size: 28px;
+    }
+
+    .contact_info h3{
+        font-size: 20px;
+    }
+
+    .location_info .location_map iframe{
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .work_list {
+        background-color: transparent;
+        display: grid;
+        grid-auto-rows: 200px;
+    }
 }

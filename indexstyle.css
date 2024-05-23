@@ -444,6 +444,10 @@ html{
         "supplements_text";
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .container {
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {

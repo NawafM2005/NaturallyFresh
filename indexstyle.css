@@ -384,7 +384,7 @@ html{
 @media (max-width: 1000px) {
 
     .nav_links {
-      display: none;
+      display: flex;
     }
 
     .icons {

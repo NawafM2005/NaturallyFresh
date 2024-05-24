@@ -139,9 +139,9 @@ body{
 }
 
 .our_section #image img{
-    max-width: 25rem;
+    max-width: 50rem;
     max-height: 15rem;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 20px;
 }
 

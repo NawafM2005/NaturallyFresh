@@ -260,6 +260,11 @@ footer a:hover {
         padding-top: 20px;
         margin-bottom: 10px;
     }
+
+    header::after {
+        background: url('Images/about_phone_background.png');
+        background-size: cover;  /* Adjust as needed */
+    }
 }
 
 

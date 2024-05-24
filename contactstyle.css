@@ -345,6 +345,11 @@ footer a:hover {
     .location_info .location_map{
         width: 1fr;
     }
+
+    header::after {
+        background: url('Images/contact_phone_background.png');
+        background-size: cover;  /* Adjust as needed */
+    }
 }
 
 @media (max-width: 700px) {

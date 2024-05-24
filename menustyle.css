@@ -433,6 +433,11 @@ html{
         display: grid;
         grid-template-columns: repeat(2, 1fr);   
     }
+
+    header::after {
+        background: url('Images/menu_phone_background.png');
+        background-size: cover;  /* Adjust as needed */
+    }
 }
 
 @media (max-width: 400px) {

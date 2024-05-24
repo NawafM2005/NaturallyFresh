@@ -381,10 +381,10 @@ html{
 }
 
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
     .nav_links {
-      display: flex;
+      display: none;
     }
 
     .icons {

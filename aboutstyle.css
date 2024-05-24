@@ -34,7 +34,8 @@ header h3{
     padding: 10px 20px;
     height: 100px;
     backdrop-filter: blur(50px);
-    border-radius: 5px;
+    border-radius: 10px;
+    z-index: 2;
 }
 
 .logo img {
@@ -42,7 +43,7 @@ header h3{
     width: 100px;
 }
 
-.nav_links ul {
+.nav_bar ul {
     list-style: none;
     margin: 0;
     padding: 50px;
@@ -52,21 +53,21 @@ header h3{
     font-size: 18px;
 }
 
-.nav_links ul li {
+.nav_bar ul li {
     margin-left: 50px;
-    border-right: 3px solid white;
     padding-right: 40px;
     box-sizing: border-box;
+    border-right: 3px solid white;
 }
 
-.nav_links ul li a {
+.nav_bar ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     transition: color 0.4s ease;
 }
 
-.nav_links ul li a:hover {
+.nav_bar ul li a:hover {
     color: white;
 }
 
@@ -166,37 +167,6 @@ body{
     display: none;
 }
 
-.nav_bar_dropdown{
-    display: none;
-    text-align: center;
-    max-width: 1300px;
-    padding: 10px;
-    background-color: black;
-}
-
-.nav_links_dropdown ul {
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.nav_links_dropdown ul li {
-    padding: 10px 20px; /* Adjust padding as needed */
-}
-
-.nav_links_dropdown ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    transition: color 0.4s ease;
-}
-
-.nav_links_dropdown ul li a:hover {
-    color: white;
-}
-
 html{
     scroll-behavior: smooth;
 }
@@ -204,8 +174,6 @@ html{
 #check{
     display: none;
 }
-
-
 
 /* Basic styling for the footer */
 footer {
@@ -229,15 +197,32 @@ footer a:hover {
 
 @media (max-width: 1000px) {
 
-    .nav_links {
-      display: none;
+    .icons {
+        display: block;
+        cursor: pointer; /* Make it clickable */
     }
 
-    .icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer; /* Make it clickable */
+    .nav_bar ul li{
+        border-right: 0px solid white;
+        padding-bottom: 40px;
+    }
+
+    .nav_bar ul {
+        display: none;
+        position: fixed;
+        width: 1fr;
+        height: 200px;
+        background: #000000;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        transition: all .5s;
+        top: 120px;
+        box-shadow: 0px 5px 8px rgb(255, 255, 255); /* Add a slight shadow */
+    }
+
+    .nav_bar ul li a{
+        color: white;
     }
       
     #menu_icon {

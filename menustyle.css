@@ -364,7 +364,7 @@ html{
         right: 0px;
         text-align: center;
         transition: all .5s;
-        top: 120px;
+        top: 110px;
         box-shadow: 0px 5px 8px rgb(255, 255, 255); /* Add a slight shadow */
     }
 
@@ -437,6 +437,13 @@ html{
     header::after {
         background: url('Images/menu_phone_background.png');
         background-size: cover;  /* Adjust as needed */
+    }
+}
+
+@media (max-width: 500px){
+    .nav_bar{
+        background-color: #000000;
+        backdrop-filter: blur(0px);
     }
 }
 
